@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
-    <script src="./js/functions.js" defer></script>
+    <script src="./js/brazil.js" defer></script>
 </head>
 
 <body>
@@ -24,10 +24,10 @@
         </a>
         <div class="navbar-links">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Mundo</a></li>
-                <li><a href="#">Brasil</a></li>
-                <li><a href="#">O Dev</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="global.html">Mundo</a></li>
+                <li><a href="brazil.html">Brasil</a></li>
+                <li><a href="about">O Dev</a></li>
             </ul>
         </div>
     </nav>
@@ -38,7 +38,7 @@
         <div id="world-data">
             <div class="panel">
 
-                <h1> Casos Mundiais </h1>
+                <h1> Total de Casos </h1>
                 <h4 id="world-number"></h4>
             </div>
         </div>
@@ -48,14 +48,14 @@
 
         <div class="data-container">
             <div id="country-data" onchange="showData()">
-                <h1> Escolha um país</h1>
-                <select id="country-list">
+                <h1> Escolha um estado: </h1>
+                <select id="state-list">
                 </select>
 
-                <h3> Nome do Páis: <span id="country-name"></span></h3>
-                <h3> Código do País: <span id="country-code"></span></h3>
-                <h3> Total de Casos: <span id="country-cases"></span></h3>
-                <h3> Última Atualização: <span id="country-update"></span></h3>
+                <h3> UF: <span id="state-code"></span></h3>
+                <h3> Nome do Estado: <span id="state-name"></span></h3>
+                <h3> Total de Casos: <span id="state-cases"></span></h3>
+                <h3> Última Atualização: <span id="state-update"></span></h3>
 
             </div>
         </div>
@@ -105,9 +105,9 @@
         </div>
   
         <div class="footer-links">
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-          <a href="#">CV Online</a>
+          <a href="https://www.linkedin.com/in/carlos-frinka-neto-8215a760/">LinkedIn</a>
+          <a href="https://github.com/cfrinka">GitHub</a>
+          <a href="https://cfrinka.github.io/minha_pagina/">CV Online</a>
   
         </div>
       </div>
