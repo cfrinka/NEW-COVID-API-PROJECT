@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados COVID-19</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="./js/functions.js" defer></script>
+</head>
+
+<body>>
+
+    <nav class="navbar">
+        <img src="images/virus_globe.svg">
+        <div class="brand-title">Dados COVID-19</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mundo</a></li>
+                <li><a href="#">Brasil</a></li>
+                <li><a href="#">O Dev</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+    <div class="main-content">
+        <div id="world-data">
+            <div class="panel">
+
+                <h1> Casos Mundiais </h1>
+                <h4 id="world-number"></h4>
+            </div>
+        </div>
+
+    </div>
+    <div id="panels-data">    
+
+        <div class="data-container">
+            <div id="country-data" onchange="showData()">
+                <h1> Escolha um país</h1>
+                <select id="country-list">
+                </select>
+
+                <h3> Nome do Páis: <span id="country-name"></span></h3>
+                <h3> Código do País: <span id="country-code"></span></h3>
+                <h3> Total de Casos: <span id="country-cases"></span></h3>
+                <h3> Última Atualização: <span id="country-update"></span></h3>
+
+            </div>
+        </div>
+        <div class="data-container">
+
+
+            <div class="panel">
+                <h1> Infectados </h1>
+                <h4 id="infected-panel"></h4>
+            </div>
+
+            <div class="panel">
+                <h1> Mortos </h1>
+                <h4 id="dead-panel"></h4>
+            </div>
+
+            <div  class="panel">
+                <h1> Curados </h1>
+                <h4 id="cured-panel"></h4>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="footer-name">
+          Criado por: <span>Carlos Frinka Neto
+  
+        </div>
+  
+        <div class="footer-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+          <a href="#">CV Online</a>
+  
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
