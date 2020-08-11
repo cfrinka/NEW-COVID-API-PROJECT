@@ -29,14 +29,37 @@ async function getStates() {
 
 getStates()
 
-async function showStateData() {
-    const country = document.getElementById("state-list").value
 
+
+async function getBrazilTotal(){
+    try{
+    const res = await axios.get('https://api.covid19.com/country/brazil')
+    const data = res.data
+    const latestData = data[data.length - 1]
+
+    const casesBrazil = document.getElementById('brazil-number')
+
+    casesBrazil.innerHTML = latestData.Confirmed
+
+    } catch(error) {
+        console.log(error)
+    }
+}
+
+getBrazilTotal()
+
+
+
+
+
+async function showStateData() {
+    const stateCode = document.getElementById("state-list").value
+    
     try{ 
-        const {data:{data}}=  await axios.get(`https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/${uf}`)
+        const data=  await axios.get(`https://covid19-brazil-api.now.sh/api/report/v1/brazil/uf/${stateCode}`)
               
             
-        const dateRecieved = data.datetime
+        const dateRecieved = data.data.datetime
         const [year,month,day] = dateRecieved.split('-')
         const [resolvedDay] = day.split('T')
         
@@ -56,21 +79,14 @@ async function showStateData() {
 
 
 
-        /* const pais = document.getElementById('data-country')
-        const code = document.getElementById('data-code')
-        const cases = document.getElementById('data-cases')
-        const lastUpdate = document.getElementById('data-last-update')
-        const infected = document.getElementById('infected-panels')
-        const dead = document.getElementById('dead-panels')
-        const cured = document.getElementById('cured-panels') */
 
-        pais.innerHTML = data.state
-        code.innerHTML = data.uf
-        cases.innerHTML = data.cases
+        state.innerHTML = data.data.state
+        uf.innerHTML = data.data.uf
+        cases.innerHTML = data.data.cases
         lastUpdate.innerHTML = dateFormated
-        infected.innerHTML = data.cases
-        dead.innerHTML = data.deaths
-        cured.innerHTML = data.refuses
+        infected.innerHTML = data.data.cases
+        dead.innerHTML = data.data.deaths
+        cured.innerHTML = data.data.refuses
         
     } catch (error)  {
         console.log('deu ruim', error) 
