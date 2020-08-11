@@ -33,13 +33,14 @@ getStates()
 
 async function getBrazilTotal(){
     try{
-    const res = await axios.get('https://api.covid19.com/country/brazil')
+    const res = await axios.get('https://api.covid19api.com/country/brazil')
     const data = res.data
     const latestData = data[data.length - 1]
 
     const casesBrazil = document.getElementById('brazil-number')
 
     casesBrazil.innerHTML = latestData.Confirmed
+    $('.money').mask('000,000,000,000,000,000', {reverse: true});
 
     } catch(error) {
         console.log(error)
