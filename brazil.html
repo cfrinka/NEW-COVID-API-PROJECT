@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="js/totalcasesworld.js"></script>
     <script src="./js/brazil.js" defer></script>
 </head>
 
@@ -38,8 +39,8 @@
         <div id="world-data">
             <div class="panel">
 
-                <h1> Total de Casos </h1>
-                <h4 id="world-number"></h4>
+                <h1> Casos Mundiais </h1>
+                <h4 id="world-number" class="money">###</h4>
             </div>
         </div>
 
@@ -47,7 +48,7 @@
     <div id="panels-data">    
 
         <div class="data-container">
-            <div id="country-data" onchange="showData()">
+            <div id="country-data" onchange="showStateData()">
                 <h1> Escolha um estado: </h1>
                 <select id="state-list">
                 </select>

@@ -83,8 +83,11 @@ async function showData() {
         cases.innerHTML = latestData.Confirmed
         lastUpdate.innerHTML = dateFormated
         infected.innerHTML = latestData.Active
+        $('.money').mask('000,000,000,000,000,000', {reverse: true});
         dead.innerHTML = latestData.Deaths
+        $('.money').mask('000,000,000,000,000,000', {reverse: true});
         cured.innerHTML = latestData.Recovered
+        $('.money').mask('000,000,000,000,000,000', {reverse: true});
         
     } catch (error)  {
         console.log('deu ruim', error) 
