@@ -17,7 +17,6 @@ select {
 
 .container {
     height: 90vh;
-    
     background-color: cornsilk;
     background-image: url('../images/doctor.svg');
     background-repeat: no-repeat;
