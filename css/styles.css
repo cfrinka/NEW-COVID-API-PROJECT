@@ -19,7 +19,9 @@ a:hover {
     font-family: 'Baloo Tamma 2', cursive;
     
 }
-
+body {
+    background-color: cornsilk;
+}
 .content-text{
     display: flex;
     flex-direction: column;
