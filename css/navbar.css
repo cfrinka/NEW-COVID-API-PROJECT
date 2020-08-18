@@ -99,10 +99,38 @@ body {
 }
 
 @media (max-width: 900px){
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .toggle-button {
       display: flex;
-
   }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active{
+    display: flex;
+    background-color: #593259;
+  }
+
   .brand-title {
     display: flex;
     align-items: center;
@@ -112,33 +140,4 @@ body {
 
   #logo-header {
     margin: 10px;
-  }
-  
-
-  .navbar-links {
-      display: none;
-      width: 100%;
-  }
-
-  .navbar {
-      flex-direction: row;
-      align-items: flex-start;
-
-  }
-
-  .navbar-links ul {
-      flex-direction: column;
-      width: 100%;
-  }
-
-  .navbar-links li {
-      text-align: center;
-  }
-
-  .navbar-links a {
-      padding: .5rem 1rem
-  }
-
-  .navbar-links .active {
-      display: flex;
   }
