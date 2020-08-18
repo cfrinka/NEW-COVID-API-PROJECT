@@ -10,7 +10,7 @@ a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: cornsilk;
+    background-color: #edf8f6;
     background-image: url('../images/doctor.svg');
     background-repeat: no-repeat;
     background-position-y:center ;
@@ -20,7 +20,7 @@ a:hover {
     
 }
 body {
-    background-color: cornsilk;
+    background-color: #edf8f6;
 }
 .content-text{
     display: flex;
@@ -32,17 +32,17 @@ body {
 
 .content-text h3{
     font-size: 70px;
-    text-shadow: cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,
-                 cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,
-                 cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px
+    text-shadow: #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,
+                 #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,
+                 #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px
 }
 
 
 .content-text p {
     font-weight: bold;
-    text-shadow: cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,
-                 cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,
-                 cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px,  cornsilk 0px 0px 1px ;
+    text-shadow: #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,
+                 #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,
+                 #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px,  #edf8f6 0px 0px 1px ;
     
 }
 
@@ -58,8 +58,6 @@ body {
     
 }
 
-
-
 .buttons {
     display: flex;
     align-items: center;
@@ -69,7 +67,7 @@ body {
     background-color: #593259;
     border-radius: 20px;
     font-size: 45px;
-    border: 2px solid cornsilk;
+    border: 2px solid #edf8f6;
         
 }
 
@@ -108,4 +106,57 @@ body {
     color: #019547;
     margin-right: 50px;
 
+}
+
+@media (max-width: 900px){
+
+    .content {
+        background-size: 60%;
+    }
+
+    .content-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-text h3 {
+        font-size: 40px
+    }
+
+    .content-text p {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .buttons {
+        height: 90px;
+        width: 150px;
+        margin-right: 10px;
+        font-size: 40px
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5%;
+    }
+
+    .footer-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .footer-name span {
+        font-size: 18px;
+        margin: 5px;
+    }
+
+    .footer-links {
+        display: none
+    }
 }
